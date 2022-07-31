@@ -3,7 +3,7 @@
 
 FROM alpine:3.6
 
-ARG POCKETBASE_VERSION=0.2.8
+ARG POCKETBASE_VERSION=0.3.3
 
 # Install the dependencies
 RUN apk add --no-cache \
@@ -21,7 +21,7 @@ RUN chmod +x /usr/local/bin/pocketbase
 
 
 # Notify Docker that the container wants to expose a port.
-EXPOSE 8090
+EXPOSE 80
 
 # Start Pocketbase
 CMD [ "/usr/local/bin/pocketbase", "serve" ]
