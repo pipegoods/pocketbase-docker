@@ -21,7 +21,7 @@ RUN chmod +x /usr/local/bin/pocketbase
 
 
 # Notify Docker that the container wants to expose a port.
-EXPOSE 80
+EXPOSE 8090
 
 # Start Pocketbase
 CMD [ "/usr/local/bin/pocketbase", "serve" ]
